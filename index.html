@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+</head>
+<body>
+    <div class="navi">
+        <img src="./item/bento.svg" alt="MENUボタン">
+    </div>
+
+    <div class="top">
+        <img src="./item/タイトル.svg" alt="TOP">
+        <!-- <div><img src="./item/Iyom’s portfolio.svg" alt="Iyom’s portfolio"></div> -->
+    </div>
+
+    <div id="about" class="clearfix">
+        
+        <img src="./item/ABOUT.svg" alt="ABOUT">
+        
+        <div id="about_text">
+            <div class="last grade"></div>
+            <p>
+                名称：いょむ<br>
+                種族：ハイエルフ<br>
+                属性：土属性<br>
+            </p>
+            <p>
+                近畿大学理工学部情報学科１年。<br>
+                大阪生まれの大阪育ち。標準語なまりの関西弁話者。<br>
+                四捨五入すると二十歳。<br>
+                四捨五入せずに160cm。ちっちゃい。みにまむ。<br>
+                電子計算機研究会（CSG）所属。<br>
+                課題に追われると虚無になる脆弱な心の持ち主。<br>
+                中学三年の時にプログラミングと出会う。<br>
+                当時使用したのはHSPという超マイナー言語。<br>
+                マイナーすぎていいロゴがネットにないためLangageに載せることを諦めた。それでもぶっちゃけ神言語。<br>
+                高校時代は競プロに挑戦した。<br>
+                最高戦績はパソコン甲子園新人賞受賞。過去の栄光はすがるためにある。<br>
+            </p>
+            <div class="last grade"></div>
+        </div>
+        <div class="about_kage"></div>
+    </div>
+
+    <div class="language">
+        <div>
+            <img src="./item/LANGUAGE.svg" alt="LANGUAGE">
+        </div>
+        <div class="langLV">
+            <div><img src="./item/Lv.0.svg" alt="Lv.0"></div>
+            <div><img src="./item/Lv.1.svg" alt="Lv.1"></div>
+            <div><img src="./item/Lv.2.svg" alt="Lv.2"></div>
+            <div><img src="./item/Lv.3.svg" alt="Lv.3"></div>
+        </div>
+        <div class="ba-">
+            <p>Lv.0</p>
+            <div></div>
+            <p>Lv.3</p>
+        </div>
+    </div>
+
+    <div class="creation">
+        <div class="creation_p"> <!-- 内容を追加したらシャドウの変更もすること！.creation_p -->
+            <div class="last grade"></div>
+            <h3 class="creation_contents">●バックアップ</h3>
+            <div class="div_h4"></div>
+            <h4 class="creation_contents">C言語</h4>
+            <div class="div_p"></div>
+            <p class="creation_contents">ローカルのデータのパスを入力すると、その内容をテキストファイルにして出力してくれる。<br>
+                コードをガンガン書き換える前に保険でバックアップを取っておける。安心。<br>
+            </p>
+            <p></p>
+            <h3 class="creation_contents">●ブラックジャック</h3>
+            <div class="div_h4"></div>
+            <h4 class="creation_contents">C言語</h4>
+            <div class="div_p"></div>
+            <p class="creation_contents">かなり魔改造されたブラックジャック。<br>
+                スコアを日時と共に別ファイルに記録してデータベースを作ることができる。<br>
+                また、過去の自分とのランキング機能もある。<br>
+            </p>
+            <p class="grade"></p>
+            <div class="last grade"></div>
+        </div>
+        <img src="./item/CREATION.svg" alt="CREATION">
+    </div>
+
+    <div class="blog clearfix">
+        <img src="./item/BLOG.svg" alt="BLOG">
+        <p>他愛のない日常をお送りします。<br>
+            更新日時は不定期ですが、長く暖かい目で待って下さいませ。
+        </p>
+        <div class="blog_button">
+            <p>ブログページはこちら</p>
+        </div>
+    </div>
+
+    <div class="contact clearfix">
+        
+        <img src="./item/CONTACT.svg" alt="CONTACT">
+        
+        <div>
+            <div class="form">
+                <!--<%= form_tag('次の画面のパス', method: :post) do %> -->
+                    <input type="text" name="name" placeholder="NAME">
+                    <input type="text" name="mail" placeholder="e-mail">
+                    <textarea  name="message" placeholder="MESSAGE"></textarea>
+                    <input class="send" type="submit" value="SEND">
+                <!--<% end %> -->
+            </div>
+            <div class="sns">
+                <img src="./item/twitter.svg" alt="twitter">
+                <img src="./item/github.svg" alt="github">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
