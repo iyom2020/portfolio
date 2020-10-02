@@ -1,0 +1,472 @@
+body{
+    margin: 0;
+    background-color: rgb(65, 65, 65);
+}
+
+.navi{
+    position: fixed;
+    top: 0px;
+    left: 100vw;
+    transform: translateX(-100%);
+    z-index: 10;
+}
+.navi > img{
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.top{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.top > img{
+    width: 100%;
+    height: 100%;
+}
+.top > div {
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.top > div > img{
+    width: 55%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about{
+    width: 70vw;
+    margin-top:10vw;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#about  > img{
+    width: 40%;
+    float: left;
+    
+}
+#about > #about_text{
+    
+    font-size: 12px;
+    font-family: 'Nanum Myeongjo','MS明朝',serif;
+    color: white;
+    text-align: left;
+    margin-top: 2vw;
+    margin-left: 37vw;
+    max-width: 35vw;
+    max-height: 33vw;
+    overflow: auto;
+}
+@media screen and (max-width:1000px){
+    #about_text{
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) 0 0/100% 20px, linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) bottom/100% 20px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .last {
+        width: 100%;
+        height: 20px;
+        clip-path: none;
+
+        background-color: rgb(65, 65, 65);
+        background-repeat: no-repeat;
+        background-attachment: local;
+    }
+}
+
+#about_text > p{
+    margin-top: 0;
+    mix-blend-mode: overlay;
+}
+
+.language{
+    width: 70vw;
+    position: relative;
+    left: 50%;
+    margin-top:10vw;
+    transform: translateX(-50%);
+}
+.language > div{
+    width: 100%;
+    height: 24%;
+}
+.language > div > img{
+    width: 100%;
+}
+
+.language > div > div > img{
+    width: 100%;
+}
+.language > .langLV{
+    margin-top: 5%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.language > .langLV > div{
+    width: 25%;
+    height: 80%;
+    text-align: center;
+}
+.language > .langLV > div > img{
+    width: 80%;
+}
+.language > .ba-{
+    margin-top: 1vw;
+    width: 100%;
+}
+.ba-{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ba- > div {
+    width: 60%;
+    height: 5vw;
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+    background-color: #ffffff;
+    opacity: 0.25;
+}
+.ba- > p {
+    margin: 0;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    color: #ffffff;
+    font-size: 3vw;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+.creation {
+    margin-top: 10vw;
+    width: 70vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.creation > img {
+    width: 40%;
+    margin-left: 5vw;
+}
+.creation_p{
+    width: 35vw;
+    float: left;
+
+    max-width: 35vw;
+    max-height: 33vw;
+    overflow: auto;
+    
+    
+    /*border-right: 1px solid #CCC;*/
+    z-index:5;
+}
+@media screen and (max-width:870px){
+    .creation_p{
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) 0 0/100% 20px, linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) bottom/100% 20px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+.creation_p > .grade {
+    /*background: linear-gradient(to top, hsla(0,0%,100%,0), rgba(120, 120, 120, 1) 15px) 0 0 / 50px 100%, linear-gradient(to bottom, hsla(0,0%,100%,0), rgba(120, 120, 120, 1) 15px) bottom / 50px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  /*border-bottom: 1px solid #CCC;
+  border-collapse: collapse;*/
+
+  background-color: rgb(65, 65, 65);
+}
+.creation_p > .last {
+    width: 100%;
+    height: 20px;
+    clip-path: none;
+
+    background-color: rgb(65, 65, 65);
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+.creation_p > .last:after {
+    width: 100%;
+    height: 20px;
+    transform: translateY(-100%);
+
+    min-width: 100%;
+    min-height: 20px;
+    /*margin: 0;*/
+    clip-path: none;
+    background-color: none;
+    float: none;
+    margin-top: 0;
+}
+.creation_p > div {
+    width: 2vw;
+    min-width: 12px;
+    min-height: 10px;
+    /*margin: 0;*/
+    clip-path: polygon(13% 46%, 13% 54%, 87% 54%, 87% 46%);
+    background-color: #ffffff;
+    float: left;
+    margin-top: auto;    
+}
+.creation_p > h3 {
+    font-size: 16px;
+    mix-blend-mode: overlay;
+}
+.creation_p > h4 {
+    font-size: 14px;
+    mix-blend-mode: overlay;
+}
+.creation_p > p {
+    margin-left: 6vw;
+    font-size: 12px;
+    mix-blend-mode: overlay;
+}
+.div_h4{
+    height: 21px;
+    margin-left: 2vw;
+}
+.div_p{
+    height: 18px;
+    margin-left: 4vw;
+}
+.creation_contents {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Nanum Myeongjo','MS明朝',serif;
+}
+
+
+.blog {
+    margin-top: 10vw;
+    width: 70vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blog > img {
+    width: 40%;
+    display: flex;
+    float: left;
+}
+.blog > p {
+    margin-left: 50%;
+    position: relative;
+    top: 8vw;
+    width: 40%;
+    color: #ffffff;
+    font-family: 'Nanum Myeongjo','MS明朝',serif;
+    position: relative;
+    font-size: 14px;
+}
+.blog_button {
+    margin-left: 55%;
+    width: 30%;
+    height: 7vw;
+    max-width: 200px;
+    max-height: 50px;
+    position: relative;
+    top: 8vw;
+    border-radius: 2vw;
+    background-color: rgba(255, 255, 255, 0.23);
+}
+.blog_button:hover {
+    background-color: rgba(0, 0, 0, 0.23);
+}
+.blog_button > p {
+    color: #ffffff;
+    font-family: 'Nanum Myeongjo','MS明朝',serif;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width:650px){
+    .blog_button > p {
+        font-size: 13px;
+    }
+}
+
+.contact {
+    margin-top: 10vw;
+    width: 70vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.contact > img {
+    width: 40%;
+    margin-left: 10vw;
+}
+.contact > div {
+    width: 40%;
+}
+.contact > div > .form {
+    margin-top: 3%;
+    float: none;
+    width: 100%;
+}
+.contact > div > .form > input {
+    width: 100%;
+    display: flex;
+    opacity: 0.6;
+}
+.contact > div > .form > textarea {
+    width: 101%;
+    height: 15vw;
+    display: flex;
+    opacity: 0.6;
+}
+.contact > div > .form > .send {
+    width: auto;
+    margin-left: 80%;
+}
+.contact > div > .sns {
+    width: 100px;
+    display: flex;
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact > div > .sns > img {
+    margin-right: 20px;
+    width: 40px;
+    display: flex;
+    float: left;
+    background-color: #ffffff;
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1100px){
+    /*.top {
+        max-width: 990px;
+        max-height: 473px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }*/
+
+    #about {
+        max-width: 770px;
+        margin-top:110px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #about > #about_text{
+        margin-top: 22px;
+        margin-left: 407px;
+        max-width: 385px;
+        max-height: 363px;
+    }
+
+    .language {
+        max-width: 770px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top:110px;   
+    }
+    .language > .ba-{
+        margin-top: 11px;
+    }
+    .ba-{
+        height: 55px;
+    }
+    .ba- > div {
+        height: 55px;
+    }
+    .ba- > p {
+        margin-top: 11px;
+        margin-left: 27.5px;
+        margin-right: 27.5px;
+        font-size: 33px;
+    }
+
+    .creation {
+        margin-top: 110px;
+        max-width: 770px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .creation > img {
+        margin-left: 55px;
+    }
+    .creation_p{
+        width: 385px;
+        height: 363px;
+    }
+    .creation_p > div {
+        width: 22px;
+    }
+    .creation_p > p {
+        margin-left: 66px;
+    }
+    .div_h4{
+        margin-left: 22px;
+    }
+    .div_p{
+        margin-left: 44px;
+    }
+
+    .blog {
+        margin-top: 110px;
+        width: 770px;
+    }
+    .blog > p {
+        top: 88px;
+    }
+    .blog_button {
+        top: 88px;
+        border-radius: 22px;
+    }
+
+    .contact {
+        margin-top: 110px;
+        width: 770px;
+    }
+    .contact > img {
+        margin-left: 110px;
+    }
+    .contact > div > .form > textarea {
+        height: 165px;
+    }
+    
+}
