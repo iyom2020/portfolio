@@ -20,6 +20,11 @@
         
         <img src="./item/ABOUT.svg" alt="ABOUT">
         
+        <div id="phone">
+            <img id="back" src="./item/about_back_6.jpg" alt="ABOUT">
+            <img id="font" src="./item/ABOUT_font.svg" alt="ABOUT">
+        </div>
+        
         <div id="about_text">
             <div class="last grade"></div>
             <p>
@@ -43,6 +48,7 @@
             <div class="last grade"></div>
         </div>
         <div class="about_kage"></div>
+        
     </div>
 
     <div class="language">
@@ -63,6 +69,10 @@
     </div>
 
     <div class="creation">
+        <div id="phone">
+            <img id="back" src="./item/CREATION_phone.svg" alt="CREATION">
+            <img id="font" src="./item/CREATION_font.svg" alt="CREATION">
+        </div>
         <div class="creation_p"> <!-- 内容を追加したらシャドウの変更もすること！.creation_p -->
             <div class="last grade"></div>
             <h3 class="creation_contents">●バックアップ</h3>
@@ -88,6 +98,10 @@
     </div>
 
     <div class="blog clearfix">
+        <div id="phone">
+            <img id="back" src="./item/BLOG_phone.svg" alt="BLOG">
+            <img id="font" src="./item/BLOG_font.svg" alt="BLOG">
+        </div>
         <img src="./item/BLOG.svg" alt="BLOG">
         <p>他愛のない日常をお送りします。<br>
             更新日時は不定期ですが、長く暖かい目で待って下さいませ。
@@ -99,20 +113,25 @@
 
     <div class="contact clearfix">
         
+        <div id="phone">
+            <img id="back" src="./item/CONTACT_phone.svg" alt="CONTACT">
+            <img id="font" src="./item/CONTACT_font.svg" alt="CONTACT">
+        </div>
+
         <img src="./item/CONTACT.svg" alt="CONTACT">
         
-        <div>
+        <div id="message">
             <div class="form">
                 <!--<%= form_tag('次の画面のパス', method: :post) do %> -->
                     <input type="text" name="name" placeholder="NAME">
                     <input type="text" name="mail" placeholder="e-mail">
-                    <textarea  name="message" placeholder="MESSAGE"></textarea>
+                    <textarea  name="message" placeholder="MESSAGE(送信機能が未実装です)"></textarea>
                     <input class="send" type="submit" value="SEND">
                 <!--<% end %> -->
             </div>
             <div class="sns">
-                <img src="./item/twitter.svg" alt="twitter">
-                <img src="./item/github.svg" alt="github">
+                <a href="https://twitter.com/_iyom_"><img src="./item/twitter.svg" alt="twitter"></a>
+                <a href="https://github.com/iyom2020"><img src="./item/github.svg" alt="github"></a>
             </div>
         </div>
         

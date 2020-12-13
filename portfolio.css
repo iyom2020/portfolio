@@ -2,6 +2,11 @@ body{
     margin: 0;
     background-color: rgb(65, 65, 65);
 }
+#phone{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
 
 .navi{
     position: fixed;
@@ -60,6 +65,16 @@ body{
     width: 40%;
     float: left;
     
+}
+#about > #phone{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    /*width: 40%;
+    float: left;
+    left: 50%;
+    position: absolute;
+    top: 50%;*/
 }
 #about > #about_text{
     
@@ -190,11 +205,6 @@ body{
     }
 }
 .creation_p > .grade {
-    /*background: linear-gradient(to top, hsla(0,0%,100%,0), rgba(120, 120, 120, 1) 15px) 0 0 / 50px 100%, linear-gradient(to bottom, hsla(0,0%,100%,0), rgba(120, 120, 120, 1) 15px) bottom / 50px 100%;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  /*border-bottom: 1px solid #CCC;
-  border-collapse: collapse;*/
 
   background-color: rgb(65, 65, 65);
 }
@@ -355,7 +365,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-.contact > div > .sns > img {
+.contact > div > .sns > a > img {
     margin-right: 20px;
     width: 40px;
     display: flex;
@@ -389,6 +399,7 @@ body{
         left: 50%;
         transform: translateX(-50%);
     }
+
     #about > #about_text{
         margin-top: 22px;
         margin-left: 407px;
@@ -469,4 +480,180 @@ body{
         height: 165px;
     }
     
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    body{
+        width: 100vw;
+    }
+
+    #about{
+        width: 85vw;
+    }
+    
+    #about > img{
+        visibility: hidden;
+        width: 70%;
+        height: 0px;
+    }
+
+    #about > #phone{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #phone{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+    }
+    #phone > #back{
+        z-index: 1;
+        width: 100%;
+    }
+    #phone > #font{
+        z-index: 2;
+        width: 65%;
+        position: absolute;
+        right: 50%;
+        transform: translateY(10%)translateX(50%);
+        background-color: rgba(255, 255, 255, 0.23);
+    }
+
+    #about > #about_text{
+        z-index: 2;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 0vw;
+        margin-left: 0vw;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+        position: absolute;
+        transform: translateY(-115%);
+        background: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .last{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #about_text > p{
+        z-index: 2;
+    }
+
+
+    .creation{
+        display: block;
+        width: 85vw;
+    }
+    .creation_p{
+        width: auto;
+        font-size: 12px;
+        margin-top: 0vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+        position: absolute;
+        transform: translateY(-115%);
+        background: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .creation > img{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .creation > #phone > #font{
+        transform: translateY(50%)translateX(50%);
+    }
+
+    .blog{
+        display: block;
+        width: 85vw;
+    }
+    .blog > img{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .blog > #phone > #font{
+        width: 45%;
+        transform: translateY(25%)translateX(50%);
+    }
+    .blog > p{
+        font-size: 11px;
+        text-align: center;
+        width: 60%;
+        margin-top: 0vw;
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 40%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .blog_button{
+        width: 40%;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .blog_button > p{
+        font-size: 11px;
+        transform: translateY(0px);
+    }
+
+    .contact{
+        display: block;
+        width: 85vw;
+    }
+    .contact > img{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #message{
+        width: 60%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%)translateY(-240%);
+    }
+    .contact > #phone > #font{
+        width: 50%;
+        transform: translateY(45%)translateX(50%);
+    }
+
+    
+}
+
+@media screen and (max-width:400px){
+    #about > #about_text{
+        font-size: 10px;
+    }
+    .creation_p > p{
+        font-size: 10px;
+    }
+    #phone > #font{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:300px){
+    #phone > #font{
+        width: 45%;
+    }
 }
